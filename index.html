@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Illinois Seal of Biliteracy: Benefits for Students</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            100: '#f3e6e6',
+                            600: '#990000',
+                            800: '#800000',
+                            900: '#4a0000',
+                        },
+                        gold: {
+                            100: '#fff9c4',
+                            400: '#fdd835',
+                            500: '#fbc02d',
+                            600: '#f9a825',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'display': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .section-curve {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .section-curve svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+        .section-curve .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #800000; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4a0000; 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-maroon-800 text-white pt-20 pb-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pattern-dots"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-block bg-gold-500 text-maroon-900 font-bold py-1 px-3 rounded-full mb-4 text-sm uppercase tracking-wider shadow-lg">
+                Official State Recognition
+            </div>
+            <h1 class="font-display font-black text-4xl md:text-6xl mb-4 leading-tight">
+                ILLINOIS SEAL OF <span class="text-gold-400">BILITERACY</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto font-light">
+                Unlock college credit, career opportunities, and global connections.
+            </p>
+            
+            <div class="mt-8 flex justify-center gap-4">
+                <i class="fas fa-certificate text-gold-500 text-6xl animate-pulse"></i>
+            </div>
+        </div>
+        
+        <!-- Curve Separator -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+            <svg class="relative block w-full h-16 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section class="py-12 md:py-20 max-w-4xl mx-auto px-6 text-center">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-maroon-900 mb-6">What is it?</h2>
+        <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+            The <span class="font-bold text-maroon-800">Seal of Biliteracy</span> is an award given by the State of Illinois to high school graduates who have demonstrated a high level of proficiency in <span class="bg-gold-100 px-1 border-b-2 border-gold-400">English</span> and <span class="bg-gold-100 px-1 border-b-2 border-gold-400">one or more additional languages</span>. It appears on your diploma and transcript as an official credential.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-maroon-600">
+                <i class="fas fa-university text-4xl text-maroon-600 mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">College Credit</h3>
+                <p class="text-gray-600 text-sm">Earn up to 12 credit hours at IL public universities.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-gold-500">
+                <i class="fas fa-briefcase text-4xl text-gold-500 mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Career Boost</h3>
+                <p class="text-gray-600 text-sm">Stand out to employers with verified language skills.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-maroon-600">
+                <i class="fas fa-globe-americas text-4xl text-maroon-600 mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Global Citizen</h3>
+                <p class="text-gray-600 text-sm">Connect with diverse cultures and communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFIT 1: FINANCIAL (CHART) -->
+    <section class="bg-gray-100 py-16 md:py-24 relative">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                        <h3 class="font-display text-2xl font-bold text-maroon-800 mb-4 text-center">Estimated Tuition Savings</h3>
+                        <p class="text-center text-sm text-gray-500 mb-6 italic">Based on 8-12 credit hours awarded at public IL universities (2024 Data)</p>
+                        <div class="h-64 relative">
+                            <canvas id="savingsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-maroon-800 text-gold-400 w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold shrink-0">1</div>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-800">Save Time & Money</h2>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        By law, all Illinois public universities and community colleges <strong>must accept the Seal of Biliteracy</strong> as equivalent to 2 years of foreign language coursework.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Skip Intro Classes:</strong> Jump straight into advanced coursework or minors.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Earn 8-12 Credits:</strong> That's nearly a full semester of college finished before you start.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Free College Credit:</strong> The Seal test costs a fraction of a 3-credit college course.</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gold-100 border-l-4 border-gold-500 p-4 mt-4">
+                        <p class="text-sm text-maroon-900"><strong>Note:</strong> Students must request credit within 3 academic years after graduating high school.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFIT 2: EMPLOYMENT -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-right">
+                     <div class="relative inline-block">
+                        <div class="absolute -inset-1 bg-gold-400 rounded-lg blur opacity-75"></div>
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Job Interview" class="relative rounded-lg shadow-xl border-4 border-white transform rotate-2 hover:rotate-0 transition duration-300">
+                    </div>
+                </div>
+                <div class="md:w-1/2 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gold-500 text-maroon-900 w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold shrink-0">2</div>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-800">Competitive Edge</h2>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        In a global economy, monolingualism is a limitation. The Seal provides a verified credential that employers trust.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <i class="fab fa-linkedin text-blue-700 text-2xl mb-2"></i>
+                            <h4 class="font-bold">Digital Badge</h4>
+                            <p class="text-sm text-gray-600">Add it to your LinkedIn profile and resume certifications.</p>
+                        </div>
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <i class="fas fa-hand-holding-usd text-green-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold">Higher Pay</h4>
+                            <p class="text-sm text-gray-600">Bilingual employees often receive pay differentials or bonuses.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic border-l-4 border-maroon-800 pl-4">
+                        "The demand for employees to be fluent in more than one language is increasing rapidly in Illinois and throughout the world." — ISBE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFIT 3: SCHOLARSHIPS & SKILLS -->
+    <section class="py-16 bg-maroon-900 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <i class="fas fa-globe absolute -right-20 -top-20 text-maroon-800 opacity-50 text-9xl transform scale-150"></i>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                 <div class="inline-block bg-gold-500 text-maroon-900 w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Scholarships & Skills</h2>
+                <p class="text-gray-300">It's not just about the diploma. It's about opening doors.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-maroon-800 p-6 rounded-lg border border-maroon-600 hover:bg-maroon-700 transition">
+                    <i class="fas fa-graduation-cap text-gold-400 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Targeted Scholarships</h4>
+                    <p class="text-sm text-gray-300">Specific awards exist for Seal recipients, such as the Seal of Biliteracy Achievement Scholarship.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-maroon-800 p-6 rounded-lg border border-maroon-600 hover:bg-maroon-700 transition">
+                    <i class="fas fa-brain text-gold-400 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Cognitive Growth</h4>
+                    <p class="text-sm text-gray-300">Studies show bilingualism improves multitasking, memory, and executive function.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-maroon-800 p-6 rounded-lg border border-maroon-600 hover:bg-maroon-700 transition">
+                    <i class="fas fa-chalkboard-teacher text-gold-400 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Future Educators</h4>
+                    <p class="text-sm text-gray-300">Qualify for programs like the Gateways Scholarship for early education professionals.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-maroon-800 p-6 rounded-lg border border-maroon-600 hover:bg-maroon-700 transition">
+                    <i class="fas fa-passport text-gold-400 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Cultural IQ</h4>
+                    <p class="text-sm text-gray-300">Demonstrate "Global Competence," a highly sought-after soft skill in corporate settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO EARN IT -->
+    <section class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-center text-maroon-900 mb-12">How Do You Earn It?</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                <!-- Requirement 1 -->
+                <div class="flex-1 bg-white p-8 rounded-xl shadow-lg border-t-8 border-gold-500 relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-maroon-900 py-1 px-4 rounded-full font-bold uppercase text-sm shadow">Step 1</div>
+                    <h3 class="font-bold text-xl text-center mb-6 mt-2">English Proficiency</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-maroon-800 rounded-full mr-2"></span> SAT Score: 480+ (EBRW)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-maroon-800 rounded-full mr-2"></span> ACT Score: 21+ (Composite)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-maroon-800 rounded-full mr-2"></span> AP English Exam: 4 or 5</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-maroon-800 rounded-full mr-2"></span> ACCESS for ELLs: 4.8 Overall</li>
+                    </ul>
+                </div>
+
+                <!-- Plus Icon -->
+                <div class="flex items-center justify-center text-4xl text-gray-300">
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- Requirement 2 -->
+                <div class="flex-1 bg-white p-8 rounded-xl shadow-lg border-t-8 border-maroon-800 relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-maroon-800 text-gold-400 py-1 px-4 rounded-full font-bold uppercase text-sm shadow">Step 2</div>
+                    <h3 class="font-bold text-xl text-center mb-6 mt-2">World Language Proficiency</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> AP Language Exam: 4 or 5</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> AAPPL Assessment: Intermediate High (I-5)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> STAMP 4S: Intermediate High</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> International Baccalaureate (IB): 5+</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Not quite there yet? You might qualify for the <span class="font-bold text-maroon-800">Commendation Toward Biliteracy</span>!</p>
+                <a href="https://www.isbe.net/sealofbiliteracy" target="_blank" class="inline-block bg-maroon-800 hover:bg-maroon-900 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:-translate-y-1">
+                    Check ISBE Requirements
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-8 border-t border-gold-500">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p class="mb-2">&copy; 2025 Illinois Seal of Biliteracy Infographic.</p>
+            <p class="max-w-2xl mx-auto">
+                Disclaimer: College credit policies vary by institution and are subject to change. Always verify specific credit awards with your university's admissions or registrar office. Data sources: Illinois State Board of Education (ISBE) and university transfer guides.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT FOR CHART -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('savingsChart').getContext('2d');
+            
+            // Data derived from 2024 university credit cost estimations for Seal recipients
+            const universityLabels = ['Eastern IL Univ', 'Illinois State', 'Aurora Univ', 'UIUC', 'Northern IL Univ'];
+            const savingsData = [2706, 3217, 3600, 4237, 5115]; // In Dollars
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: universityLabels,
+                    datasets: [{
+                        label: 'Estimated Tuition Savings ($)',
+                        data: savingsData,
+                        backgroundColor: '#fbc02d', // Gold 500
+                        borderColor: '#800000',     // Maroon 800
+                        borderWidth: 2,
+                        borderRadius: 4,
+                        hoverBackgroundColor: '#f9a825'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false, // Allows height to adapt
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.y !== null) {
+                                        label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#e5e7eb'
+                            },
+                            ticks: {
+                                callback: function(value, index, values) {
+                                    return '$' + value;
+                                },
+                                font: {
+                                    family: "'Open Sans', sans-serif"
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                font: {
+                                    family: "'Open Sans', sans-serif",
+                                    weight: 'bold'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
